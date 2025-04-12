@@ -11,13 +11,12 @@ This is a multi-step form application built using **Next.js App Router**, **Reac
 
 ### 1. **Clone the repository**
 
-````bash
-git clone https://github.com/your-username/multi-step-form.git
-cd multi-step-form
+```bash
+git clone https://github.com/Shahriar-Turag/nextjs-form.git
+cd nextjs-form
 npm install
 npm run dev
-
----
+```
 
 ## 🚀 Live Demo
 
@@ -75,4 +74,4 @@ redux/
   ├── store.ts
   ├── formSlice.ts
   └── formApi.ts
-````
+```
