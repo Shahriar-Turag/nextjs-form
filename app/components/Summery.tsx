@@ -5,6 +5,7 @@ import { RootState } from '../../redux/store';
 import { resetForm, setStep } from '../../redux/formSlice';
 import { useSubmitFormMutation } from '../../redux/formApi';
 import { useEffect, useState } from 'react';
+import Stepper from './Stepper';
 
 export default function Summary() {
 	const { formData } = useSelector((state: RootState) => state.form);
@@ -47,7 +48,7 @@ export default function Summary() {
 
 	return (
 		<div className='max-w-md mx-auto space-y-6'>
-			<h2 className='text-2xl font-semibold'>Step 4: Summary</h2>
+			<Stepper />
 
 			<div className='bg-gray-100 dark:bg-gray-800 p-4 rounded'>
 				{Object.entries(formData).map(([key, value]) => (

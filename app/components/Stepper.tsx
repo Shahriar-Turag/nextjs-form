@@ -10,7 +10,7 @@ export default function Stepper() {
 
 	return (
 		<div className='flex justify-center mb-8'>
-			<div className='flex items-center space-x-4'>
+			<div className='flex items-center space-x-1'>
 				{steps.map((label, index) => {
 					const stepNumber = index + 1;
 					const isActive = stepNumber === currentStep;
@@ -32,7 +32,7 @@ export default function Stepper() {
 							>
 								{stepNumber}
 							</div>
-							<span className='text-sm whitespace-nowrap'>
+							<span className='text-sm whitespace-nowrap hidden sm:inline'>
 								{label}
 							</span>
 							{stepNumber < steps.length && (
