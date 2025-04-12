@@ -9,7 +9,7 @@ This is a multi-step form application built using **Next.js App Router**, **Reac
 
 ## 🚀 Live Demo
 
-> Hosted on [Vercel]()
+> Hosted on [Vercel](https://multistepform-orcin.vercel.app/)
 
 ---
 
@@ -47,19 +47,20 @@ This is a multi-step form application built using **Next.js App Router**, **Reac
 
 ```bash
 app/
-  ├── page.tsx           # Step switcher
-  ├── layout.tsx         # Root layout
+  ├── components/
+  │   ├── Step1.tsx
+  │   ├── Step2.tsx
+  │   ├── Step3.tsx
+  │   ├── Summary.tsx
+  │   └── Stepper.tsx
+  ├── page.tsx             # Main page – shows current step
+  ├── layout.tsx           # Root layout
   └── api/
       └── submit/
-          └── route.ts   # Simulated API endpoint
-components/
-  ├── Step1.tsx
-  ├── Step2.tsx
-  ├── Step3.tsx
-  ├── Summary.tsx
-  └── Stepper.tsx
+          └── route.ts     # API simulation (mock POST endpoint)
+
 redux/
+  ├── store.ts
   ├── formSlice.ts
-  ├── formApi.ts
-  └── store.ts
+  └── formApi.ts
 ```
